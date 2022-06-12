@@ -2,6 +2,15 @@
 > Ceres, Eigen3 built in
 
 # 3rd party libraries
+```
+$ mkdir thirdparty && cd thirdparty
+$ mkdir eigen && cd eigen
+$ mkdir build && mkdir install
+
+$ cd ..
+$ mkdir ceres && cd ceres
+$ mkdir build && mkdir install
+```
 ## Eigen3 build
 ```
 $ cd thirdparty/eigen && wget https://gitlab.com/libeigen/eigen/-/archive/3.3.9/eigen-3.3.9.tar.gz -O eigen.tar.gz
@@ -28,4 +37,16 @@ find_package(Eigen3 3.3 REQUIRED HINTS /your_directory/SLAM_BackEnd/thirdparty/e
 ```
 $ make -j7
 $ sudo make install
+```
+
+# Run BA
+## Simple BA
+```
+$ cd build
+$ simpleBA ../sources/problem-16-22106-pre.txt
+```
+## BA
+```
+$ cd build
+$ BA --input=../sources/problem-16-22106-pre.txt
 ```
