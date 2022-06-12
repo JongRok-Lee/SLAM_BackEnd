@@ -25,14 +25,14 @@ $ sudo make install
 ```
 $ cd thirdparty/ceres && wget http://ceres-solver.org/ceres-solver-2.1.0.tar.gz -O ceres.tar.gz
 $ tar -zxvf ceres.tar.gz
-$ cd ../build && cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_INSTALL_PREFIX=../install ../ceres-solver-2.1.0
 ```
-### Change the Eigen directory to my Eigen of thridparty 
+### Change the Eigen directory to my Eigen of thridparty
+Edit the CmakeLists.cmake file in the ceres-solver-2.1.0 directory
 ```
 find_package(Eigen3 3.3 REQUIRED)
 ----->
-
 find_package(Eigen3 3.3 REQUIRED HINTS /your_directory/SLAM_BackEnd/thirdparty/eigen/install/share/eigen3/cmake)
+$ cd ../build && cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_INSTALL_PREFIX=../install ../ceres-solver-2.1.0
 ```
 ```
 $ make -j7
