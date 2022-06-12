@@ -17,7 +17,7 @@ set(Eigen3_LIBS Eigen3::Eigen)
 set(CERES_LIBS ${CERES_LIBRARIES})
 
 set(Eigen3_INCLUDE_DIRS ${CMAKE_SOURCE_DIR}/thirdparty/eigen/install/include)
-set(CERES_INCLUDE_DIRS ${CMAKE_SOURCE_DIR}/thirdparty/g2o/install/include)
+set(CERES_INCLUDE_DIRS ${CMAKE_SOURCE_DIR}/thirdparty/ceres/install/include)
 
 # Path validation
 message("Eigen3_LIBS            - ${Eigen3_LIBS}")
