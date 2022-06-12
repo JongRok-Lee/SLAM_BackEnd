@@ -15,7 +15,7 @@ $ mkdir build && mkdir install
 ```
 $ cd thirdparty/eigen && wget https://gitlab.com/libeigen/eigen/-/archive/3.3.9/eigen-3.3.9.tar.gz -O eigen.tar.gz
 $ tar -zxvf eigen.tar.gz
-$ cd ../build && cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_INSTALL_PREFIX=../install ../eigen-3.3.9
+$ cd build && cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_INSTALL_PREFIX=../install ../eigen-3.3.9
 $ make -j
 $ sudo make install
 
@@ -33,7 +33,7 @@ Edit the CmakeLists.cmake file in the ceres-solver-2.1.0 directory
 find_package(Eigen3 3.3 REQUIRED)
 ----->
 find_package(Eigen3 3.3 REQUIRED HINTS /your_directory/SLAM_BackEnd/thirdparty/eigen/install/share/eigen3/cmake)
-$ cd ../build && cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_INSTALL_PREFIX=../install ../ceres-solver-2.1.0
+$ cd build && cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_INSTALL_PREFIX=../install ../ceres-solver-2.1.0
 ```
 ```
 $ make -j7
