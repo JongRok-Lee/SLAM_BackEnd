@@ -23,7 +23,7 @@ $ sudo make install
 
 ## Ceres build
 ```
-$ sudo apt install libgflags-dev libgoogle-glog-dev
+$ sudo apt install libgflags-dev libgoogle-glog-dev libsuitesparse-dev
 $ cd thirdparty/ceres && wget http://ceres-solver.org/ceres-solver-2.1.0.tar.gz -O ceres.tar.gz
 $ tar -zxvf ceres.tar.gz
 ```
