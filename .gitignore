@@ -2,3 +2,4 @@ thirdparty/ceres/install
 thirdparty/ceres/ceres-solver-2.1.0
 thirdparty/eigen/install
 thirdparty/eigen/eigen-3.3.9
+build/
