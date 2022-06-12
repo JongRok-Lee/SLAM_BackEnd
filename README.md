@@ -43,10 +43,10 @@ $ sudo make install
 ## Simple BA
 ```
 $ cd build
-$ simpleBA ../sources/problem-16-22106-pre.txt
+$ ./simpleBA ../sources/problem-16-22106-pre.txt
 ```
 ## BA
 ```
 $ cd build
-$ BA --input=../sources/problem-16-22106-pre.txt
+$ ./BA --input=../sources/problem-16-22106-pre.txt
 ```
