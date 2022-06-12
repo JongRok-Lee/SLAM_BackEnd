@@ -40,12 +40,12 @@ $ sudo make install
 ```
 
 # Run BA
-## Simple BA
+## Simple Bundle Adjustment
 ```
 $ cd build
 $ ./simpleBA ../sources/problem-16-22106-pre.txt
 ```
-## BA
+## Bundle Adjustment
 ```
 $ cd build
 $ ./BA --input=../sources/problem-16-22106-pre.txt
