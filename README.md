@@ -1,3 +1,6 @@
+# Korean Ceres-Solver Tutorial
+https://lord-is-my-shepherd.notion.site/Tutorial-dc44ccf751f2497faa6667cca6c24a3a
+
 # CMake environment for SLAM BackEnd
 > Ceres, Eigen3 built in
 
