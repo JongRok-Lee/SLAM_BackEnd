@@ -52,3 +52,7 @@ $ ./simpleBA ../sources/problem-16-22106-pre.txt
 $ cd build
 $ ./BA --input=../sources/problem-16-22106-pre.txt --initial_ply=before.ply --final_ply=after.ply
 ```
+## Results (MeshLab)
+![](\\results\meshlab.PNG)
+- Gray: Before Bundle Adjustment
+- Orange: After Bundle Adjustment
