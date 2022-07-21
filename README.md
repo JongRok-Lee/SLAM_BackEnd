@@ -14,21 +14,22 @@ $ mkdir build && mkdir install
 ## Eigen3 build
 ```
 $ cd thirdparty/eigen && wget https://gitlab.com/libeigen/eigen/-/archive/3.3.9/eigen-3.3.9.tar.gz -O eigen.tar.gz
+$ mkdir build && mkdir install
 $ tar -zxvf eigen.tar.gz
-$ cd build && cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_INSTALL_PREFIX=../install ../eigen-3.3.9
+$ cd build && cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=../install ../eigen-3.3.9
 $ make -j
 $ sudo make install
-
 ```
 
-## Ceres build
+## Ceres build file download
 ```
 $ sudo apt install libgflags-dev libgoogle-glog-dev libsuitesparse-dev
 $ cd thirdparty/ceres && wget http://ceres-solver.org/ceres-solver-2.1.0.tar.gz -O ceres.tar.gz
+$ mkdir build && mkdir install
 $ tar -zxvf ceres.tar.gz
 ```
 ### Change the Eigen directory to my Eigen of thridparty
-Edit the CmakeLists.cmake file in the ceres-solver-2.1.0 directory
+Edit the CmakeLists.cmake file in the ceres-solver-2.1.0 directory 
 ```
 find_package(Eigen3 3.3 REQUIRED)
 ----->
@@ -49,5 +50,5 @@ $ ./simpleBA ../sources/problem-16-22106-pre.txt
 ## Bundle Adjustment
 ```
 $ cd build
-$ ./BA --input=../sources/problem-16-22106-pre.txt
+$ ./BA --input=../sources/problem-16-22106-pre.txt --initial_ply=before.ply --final_ply=after.ply
 ```
